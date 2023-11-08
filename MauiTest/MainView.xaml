@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="MauiTest.MainView">
+    <Grid HorizontalOptions="Fill" VerticalOptions="Fill" AnchorX="250" AnchorY="200">
+        <Image Source="image1.png" HorizontalOptions="Fill" VerticalOptions="Fill"></Image>
+        <toolkit:MediaElement x:Name="MediaElement1"
+                              ShouldShowPlaybackControls="True" HorizontalOptions="Fill" VerticalOptions="Fill" ShouldAutoPlay="False"  />
+        <WebView x:Name="WebView1" VerticalOptions="Fill" HorizontalOptions="Fill" ZIndex="1" Margin="0,0,0,300"  />
+
+        <Label Text="Hello, this is a long text Hello, this is a long text Hello, this is a long text" TextColor="#DA1717" FontSize="Large" ZIndex="100" />
+
+        <Button Clicked="Button_OnClicked" Text="Test" HorizontalOptions="Start" VerticalOptions="End" Margin="20"></Button>
+    </Grid>
+</ContentView>
+    
